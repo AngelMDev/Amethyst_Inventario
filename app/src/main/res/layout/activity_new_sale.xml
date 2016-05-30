@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activities.NewSaleActivity">
+
+    <include
+        android:id="@+id/tool_bar_sale"
+        layout="@layout/tool_bar_sale"
+        >
+    </include>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/salesList"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="32dp"
+
+        >
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center" >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Total= "
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_value"
+            android:text="value"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Nombre Cliente"
+        android:maxLength="255"
+        android:ems="10"
+        android:id="@+id/customerNameET"
+        android:layout_below="@+id/tool_bar_sale"
+        android:minLines="1"
+        android:minWidth="512dp" />
+
+</RelativeLayout>

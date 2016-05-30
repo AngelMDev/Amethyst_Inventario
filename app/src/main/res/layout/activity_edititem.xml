@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.Edititem">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        >
+    </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Referencia"
+        android:id="@+id/textView9"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailRef"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre"
+        android:id="@+id/textView10"
+        android:paddingTop="15dp"
+        android:textSize="12sp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/detailRef"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailName"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unidades Disponibles"
+        android:id="@+id/textView11"
+        android:textSize="12sp"
+        android:inputType="text"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/detailName"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailAvailable"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unidades Vendidas"
+        android:id="@+id/textView12"
+        android:textSize="12sp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detailAvailable"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailSold"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/detailSold"
+        android:layout_marginTop="24dp"
+        android:id="@+id/detailRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

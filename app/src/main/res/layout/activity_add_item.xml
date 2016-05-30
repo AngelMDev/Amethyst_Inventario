@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        >
+    </include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Referencia"
+        android:id="@+id/textView5"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addID"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre"
+        android:id="@+id/textView6"
+        android:textSize="12sp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addName"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unidades Disponibles"
+        android:id="@+id/textView7"
+        android:textSize="12sp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addAva"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:paddingRight="10dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Unidades Vendidas"
+        android:textSize="12sp"
+        android:id="@+id/textView8"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addSold"
+        android:paddingLeft="10dp"
+        android:textSize="16sp"
+        android:paddingRight="10dp"
+        android:inputType="number"/>
+</LinearLayout>
