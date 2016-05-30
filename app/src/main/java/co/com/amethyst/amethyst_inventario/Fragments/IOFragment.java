@@ -26,12 +26,10 @@ public class IOFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
     }
-    //test for git
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // TODO: 5/29/2016 delete this i 
-        int i;
         return inflater.inflate(R.layout.fragment_io, container, false);
     }
 }
